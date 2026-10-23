@@ -1,0 +1,21 @@
+{
+  "P-1234": {
+    "id": "p1",
+    "name": "PMJAY Basic",
+    "provider": "Government",
+    "coverage": "₹5,00,000",
+    "premium": "₹0 / year",
+    "aiMatch": 72,
+    "tag": "Free",
+    "color": "var(--accent-patient)",
+    "features": [
+      "Hospitalization",
+      "Surgery Cover",
+      "ICU Care",
+      "Lab Tests",
+      "Day-care Procedures"
+    ],
+    "appliedAt": "2026-04-19T09:16:12.030Z",
+    "status": "Under Review"
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "FM001",
+    "patientId": "P-1234",
+    "relation": "Grandfather",
+    "name": "Dharampal Patel",
+    "age": 78,
+    "blood": "O+",
+    "allergies": "Sulfa Drugs",
+    "conditions": [
+      "Diabetes",
+      "Hypertension"
+    ],
+    "insurance": "Senior Care Plus",
+    "activeMeds": 3
+  },
+  {
+    "id": "FM002",
+    "patientId": "P-1234",
+    "relation": "Mother",
+    "name": "Sarita Patel",
+    "age": 68,
+    "blood": "A+",
+    "allergies": "Penicillin",
+    "conditions": [
+      "Osteoporosis"
+    ],
+    "insurance": "PMJAY Basic",
+    "activeMeds": 1
+  },
+  {
+    "id": "FM003",
+    "patientId": "P-1234",
+    "relation": "Son",
+    "name": "Aarav Patel",
+    "age": 14,
+    "blood": "AB+",
+    "allergies": "Dust/Pollen",
+    "conditions": [
+      "Asthma"
+    ],
+    "insurance": "Star Health Premium",
+    "activeMeds": 1
+  }
+]

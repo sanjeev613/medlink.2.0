@@ -1,0 +1,41 @@
+[
+  {
+    "id": "F001",
+    "claimId": "CLM-90982",
+    "patientId": "P-1234",
+    "patientName": "Ravi Patel",
+    "amount": 24500,
+    "hospital": "Apollo Hospital",
+    "purpose": "Double Billing: Cardiology consultation & lab test combo",
+    "score": 78,
+    "level": "High",
+    "reason": "Billing amount exceeds cap limits for listed outpatient codes.",
+    "status": "Pending Review"
+  },
+  {
+    "id": "F002",
+    "claimId": "CLM-77821",
+    "patientId": "P-1234",
+    "patientName": "Ravi Patel",
+    "amount": 2400,
+    "hospital": "Fortis Hospital",
+    "purpose": "Duplicate claim check against TX004 transaction",
+    "score": 92,
+    "level": "Critical",
+    "reason": "Claim matches existing TX004 transaction date, hospital, and services.",
+    "status": "Under Investigation"
+  },
+  {
+    "id": "F003",
+    "claimId": "CLM-45210",
+    "patientId": "P-1234",
+    "patientName": "Ravi Patel",
+    "amount": 500,
+    "hospital": "General OPD clinic",
+    "purpose": "Multiple registrations / Same-day duplicate visits",
+    "score": 45,
+    "level": "Medium",
+    "reason": "Claim filed within 2 hours of a pre-existing consulting record.",
+    "status": "Reviewed & Auto-Resolved"
+  }
+]

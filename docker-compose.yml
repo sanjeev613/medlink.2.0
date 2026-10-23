@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:5.0
+    container_name: medilink-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: medilink123
+      MONGO_INITDB_DATABASE: medilink
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - medilink-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API Server
+  backend:
+    build:
+      context: ./medilink-backend
+      dockerfile: Dockerfile
+    container_name: medilink-backend
+    environment:
+      NODE_ENV: production
+      MONGODB_URI: mongodb://admin:medilink123@mongodb:27017/medilink
+      JWT_SECRET: medilink-super-secret-key-change-in-production
+      PORT: 5000
+      AI_SERVICE_URL: http://ai-service:5001
+    ports:
+      - "5000:5000"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - medilink-network
+    restart: unless-stopped
+
+  # AI Service
+  ai-service:
+    build:
+      context: ./medilink-ai
+      dockerfile: Dockerfile
+    container_name: medilink-ai-service
+    environment:
+      FLASK_ENV: production
+      PORT: 5001
+    ports:
+      - "5001:5001"
+    networks:
+      - medilink-network
+    restart: unless-stopped
+
+  # Hospital Dashboard
+  hospital-dashboard:
+    build:
+      context: ./medilink-hospital-dashboard
+      dockerfile: Dockerfile
+    container_name: medilink-hospital-dashboard
+    environment:
+      VITE_API_URL: http://localhost:5000/api
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - medilink-network
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy (Optional)
+  nginx:
+    image: nginx:alpine
+    container_name: medilink-nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - backend
+      - hospital-dashboard
+    networks:
+      - medilink-network
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
+
+networks:
+  medilink-network:
+    driver: bridge

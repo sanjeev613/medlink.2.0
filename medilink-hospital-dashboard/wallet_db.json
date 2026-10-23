@@ -1,0 +1,73 @@
+{
+  "P-1234": {
+    "patientId": "P-1234",
+    "walletBalance": 32000,
+    "abhaId": "14-1234-5678-9012",
+    "transactions": [
+      {
+        "id": "TX008_1776657563148",
+        "date": "20 Apr 2026",
+        "hospital": "Hospital Scanner",
+        "purpose": "QR scanned amount credited from text: MEDICORE-PAY|PATIENT:P-1234|ABHA:14-1234-5678-9012|AMT:5000CUR:INR|TYPE:WALLET_T",
+        "amount": 5000,
+        "type": "credit"
+      },
+      {
+        "id": "TX007_1776612492495",
+        "date": "19 Apr 2026",
+        "hospital": "Hospital Scanner",
+        "purpose": "QR scanned amount credited from text: MEDICORE-PAY|PATIENT:P-1234|ABHA:14-1234-5678-9012|AMT:2000|CUR:INR|TYPE:WALLET_",
+        "amount": 2000,
+        "type": "credit"
+      },
+      {
+        "id": "TX006_1776612462433",
+        "date": "19 Apr 2026",
+        "hospital": "Hospital Scanner",
+        "purpose": "QR scanned amount credited from text: MEDICORE-PAY|PATIENT:P-1234|ABHA:14-1234-5678-9012|AMT:500|CUR:INR|TYPE:WALLET_T",
+        "amount": 500,
+        "type": "credit"
+      },
+      {
+        "id": "TX001",
+        "date": "04 Apr 2026",
+        "hospital": "Apollo Hospital",
+        "purpose": "Cardiology Consultation",
+        "amount": 500,
+        "type": "debit"
+      },
+      {
+        "id": "TX002",
+        "date": "03 Apr 2026",
+        "hospital": "Apollo Pharmacy",
+        "purpose": "Medicines - Metformin, Amlodipine",
+        "amount": 1240,
+        "type": "debit"
+      },
+      {
+        "id": "TX003",
+        "date": "20 Mar 2026",
+        "hospital": "Govt. Health Scheme",
+        "purpose": "PMJAY Credit",
+        "amount": 5000,
+        "type": "credit"
+      },
+      {
+        "id": "TX004",
+        "date": "15 Mar 2026",
+        "hospital": "Fortis Hospital",
+        "purpose": "X-Ray + Lab Tests",
+        "amount": 2400,
+        "type": "debit"
+      },
+      {
+        "id": "TX005",
+        "date": "01 Mar 2026",
+        "hospital": "ABHA Scheme",
+        "purpose": "Initial Wallet Credit",
+        "amount": 25000,
+        "type": "credit"
+      }
+    ]
+  }
+}

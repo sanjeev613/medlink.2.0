@@ -1,0 +1,68 @@
+[
+  {
+    "id": "N006_1776655648770",
+    "patientId": "P-1234",
+    "type": "doctor",
+    "author": "Dr. Kavitha Sharma",
+    "role": "Cardiologist",
+    "note": "ok",
+    "date": "20 Apr 2026",
+    "time": "08:57 am",
+    "createdAt": "2026-04-20T03:27:28.770Z"
+  },
+  {
+    "id": "N005_1776589709636",
+    "patientId": "P-1234",
+    "type": "nurse",
+    "author": "Nurse Sunita Lal",
+    "role": "Ward Nurse — 3B",
+    "note": "what",
+    "date": "19 Apr 2026",
+    "time": "02:38 pm",
+    "createdAt": "2026-04-19T09:08:29.636Z"
+  },
+  {
+    "id": "N004_1776589692870",
+    "patientId": "P-1234",
+    "type": "doctor",
+    "author": "Dr. Kavitha Sharma",
+    "role": "Cardiologist",
+    "note": "ok",
+    "date": "19 Apr 2026",
+    "time": "02:38 pm",
+    "createdAt": "2026-04-19T09:08:12.870Z"
+  },
+  {
+    "id": "N001",
+    "patientId": "P-1234",
+    "type": "doctor",
+    "author": "Dr. K. Sharma",
+    "role": "Cardiologist",
+    "note": "Patient presented with Stage 1 Hypertension. Blood pressure consistently elevated at 140/90. Started on Amlodipine 5mg once daily. Advised low-sodium DASH diet, daily walks of 30 minutes, and home BP monitoring twice a day.",
+    "date": "04 Jan 2026",
+    "time": "09:30 AM",
+    "createdAt": "2026-01-04T09:30:00Z"
+  },
+  {
+    "id": "N002",
+    "patientId": "P-1234",
+    "type": "doctor",
+    "author": "Dr. A. Menon",
+    "role": "Endocrinologist",
+    "note": "HbA1c at 7.8% — Diabetes Type 2 moderately controlled. Continue Metformin 500mg twice daily. Advised against refined sugars and white rice. Schedule 3-month follow-up with repeat HbA1c.",
+    "date": "15 Dec 2025",
+    "time": "11:00 AM",
+    "createdAt": "2025-12-15T11:00:00Z"
+  },
+  {
+    "id": "N003",
+    "patientId": "P-1234",
+    "type": "nurse",
+    "author": "Nurse Sunita Lal",
+    "role": "Ward Nurse - 3B",
+    "note": "Patient vitals checked at morning rounds. BP: 138/88, Pulse: 82, Temp: 98.4°F. Patient reports mild headache. Informed Dr. Sharma. Patient advised to rest and hydrate. Evening medication administered on time.",
+    "date": "04 Apr 2026",
+    "time": "08:45 AM",
+    "createdAt": "2026-04-04T08:45:00Z"
+  }
+]

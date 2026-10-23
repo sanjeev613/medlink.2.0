@@ -1,0 +1,46 @@
+[
+  {
+    "id": "MT001",
+    "date": "14 Jul 2026",
+    "score": 72,
+    "stress": 3,
+    "anxiety": 4,
+    "burnout": 2,
+    "sleep": 8,
+    "mood": "Good",
+    "suggestions": "Maintain current balance. Spend time outdoors."
+  },
+  {
+    "id": "MT002",
+    "date": "21 Jul 2026",
+    "score": 65,
+    "stress": 5,
+    "anxiety": 4,
+    "burnout": 3,
+    "sleep": 7,
+    "mood": "Neutral",
+    "suggestions": "Slight stress elevation. Try morning meditation."
+  },
+  {
+    "id": "MT003",
+    "date": "28 Jul 2026",
+    "score": 58,
+    "stress": 6,
+    "anxiety": 5,
+    "burnout": 4,
+    "sleep": 6,
+    "mood": "Stressed",
+    "suggestions": "High work pressure. Practice breathing exercises and ensure screen-free wind-down time before bed."
+  },
+  {
+    "id": "MT004",
+    "date": "30 Jul 2026",
+    "score": 40,
+    "stress": 7,
+    "anxiety": 8,
+    "burnout": 7,
+    "sleep": 9,
+    "mood": "Stressed",
+    "suggestions": "High stress levels detected. We strongly suggest contacting a professional counselor. Engage in deep-breathing exercises daily."
+  }
+]

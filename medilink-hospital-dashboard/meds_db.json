@@ -1,0 +1,45 @@
+[
+  {
+    "id": "M001",
+    "name": "Metformin 500mg",
+    "dosage": "1 tablet",
+    "frequency": "After breakfast + dinner",
+    "duration": "30 days",
+    "severity": "Low",
+    "interaction": "No significant immediate interactions.",
+    "instructions": "Take with food to avoid gastric upset.",
+    "takenDays": [
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30"
+    ]
+  },
+  {
+    "id": "M002",
+    "name": "Amlodipine 5mg",
+    "dosage": "1 tablet",
+    "frequency": "After breakfast",
+    "duration": "30 days",
+    "severity": "Moderate",
+    "interaction": "Interaction risk: Simvastatin (Limitation on statin dosage recommended).",
+    "instructions": "Monitor BP daily.",
+    "takenDays": [
+      "2026-07-29",
+      "2026-07-30"
+    ]
+  },
+  {
+    "id": "M003",
+    "name": "Atorvastatin 20mg",
+    "dosage": "1 tablet",
+    "frequency": "After dinner",
+    "duration": "30 days",
+    "severity": "High",
+    "interaction": "Interaction risk: Amlodipine (Increases statin systemic exposure risk).",
+    "instructions": "Avoid grapefruit juice.",
+    "takenDays": [
+      "2026-07-28",
+      "2026-07-30"
+    ]
+  }
+]

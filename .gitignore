@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+*/node_modules/
+*/*/node_modules/
+venv/
+*/venv/
+*/*/venv/
+.venv/
+*/.venv/
+
+# Build outputs
+dist/
+*/dist/
+build/
+*/build/
+.dart_tool/
+*/.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Logs and temp files
+*.log
+*.err
+*.out
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

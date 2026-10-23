@@ -1,0 +1,34 @@
+[
+  {
+    "id": "R339646",
+    "patientId": "P-1234",
+    "date": "30 Jul 2026",
+    "doctor": "Dr. P. Nair",
+    "diagnosis": "X-Ray Chest PA View",
+    "reportType": "X-Ray",
+    "status": "Resolved",
+    "notes": "",
+    "photo": null,
+    "originalName": null,
+    "mimeType": null,
+    "fileSize": null,
+    "uploadedBy": "patient",
+    "createdAt": "2026-07-30T07:08:59.646Z"
+  },
+  {
+    "id": "R854154",
+    "patientId": "P-1234",
+    "date": "30 Jul 2026",
+    "doctor": "Dr. A. Menon",
+    "diagnosis": "Hemogram Full Blood Count",
+    "reportType": "Blood Test",
+    "status": "Controlled",
+    "notes": "",
+    "photo": "a2f7c619-e1b9-42a7-a36c-f3a109dfece8.txt",
+    "originalName": "hemogram.txt",
+    "mimeType": "text/plain",
+    "fileSize": 76,
+    "uploadedBy": "patient",
+    "createdAt": "2026-07-30T07:00:54.154Z"
+  }
+]

@@ -1,0 +1,88 @@
+user {
+  _id: ObjectId
+  phoneNumber: String (unique)
+  aadhaarNumber: String (unique)
+  firstName: String
+  lastName: String
+  email: String
+  dateOfBirth: Date
+  gender: Enum
+  bloodGroup: Enum
+  height: Number
+  weight: Number
+  medicalConditions: [String]
+  allergies: [String]
+  currentMedications: [{name, dosage, frequency}]
+  labReports: [{reportName, date, fileUrl, description}]
+  prescriptions: [{doctorName, date, fileUrl, medications}]
+  walletBalance: Number
+  lastKnownLocation: {latitude, longitude, updatedAt}
+  createdAt: Date
+  updatedAt: Date
+}
+
+emergencySOS {
+  _id: ObjectId
+  userId: ObjectId
+  emergencyType: Enum
+  severity: Enum
+  latitude: Number
+  longitude: Number
+  address: String
+  ambulanceId: ObjectId
+  ambulanceDriverName: String
+  ambulanceDriverPhone: String
+  selectedHospitalId: ObjectId
+  selectedHospitalName: String
+  status: Enum
+  hospitalResponseStatus: Enum
+  medicalDataSent: Boolean
+  createdAt: Date
+  completedAt: Date
+}
+
+hospital {
+  _id: ObjectId
+  name: String
+  registrationNumber: String (unique)
+  latitude: Number
+  longitude: Number
+  address: String
+  city: String
+  bedCapacity: Number
+  availableBeds: Number
+  departments: [{name, specializations, doctorCount}]
+  apiKey: String (unique)
+  operatingHours: Object
+  isActive: Boolean
+  isAcceptingEmergencies: Boolean
+  createdAt: Date
+}
+
+insurance {
+  _id: ObjectId
+  providerName: String
+  planName: String
+  planCode: String (unique)
+  coverage: Enum
+  baseCoverageAmount: Number
+  monthlyPremium: Number
+  coveredServices: [String]
+  targetRiskProfiles: [String]
+  networkHospitals: [ObjectId]
+  isActive: Boolean
+  createdAt: Date
+}
+
+transaction {
+  _id: ObjectId
+  userId: ObjectId
+  transactionType: Enum
+  amount: Number
+  walletBalance: Number
+  referenceId: String
+  referenceName: String
+  status: Enum
+  transactionDate: Date
+  completedAt: Date
+}
