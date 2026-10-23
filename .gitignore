@@ -17,6 +17,8 @@ build/
 */.dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.vite/
+*/.vite/
 
 # Logs and temp files
 *.log
